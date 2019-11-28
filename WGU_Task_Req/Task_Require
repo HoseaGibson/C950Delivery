@@ -1,0 +1,105 @@
+A. Greedy Algorithm used for algorithm
+
+B. Logic Comments of solution is presented in main.py
+   Explains each part of code written with comments
+
+B2. Programming Models:
+    1. Hosted on local machine, does not need a connection to run
+    2. Python 3.6 used
+    3. Pycharm for Ide
+    4. CSV to exchange data
+    --COMPLETED REVISION THATS NEEDED:
+    5. A local machine is used so the requirement need for interaction semantics defined by the application to control connect,
+        data exchange, and disconnect sequences is not needed
+
+B3. Space-Time-Complexity is throughout Package_Main.py, Distance_Main.py
+    Main.py. It is shown for each function written.
+
+B4. Adaptability:
+    Scaling this application is fairly simple because we are able to read in
+    new csv that can contain more packages to be delivered and more address with
+    the distances. This allows us to calculate new routes for determining the
+    shortest path, still being able to do this quickly, and robust enough to survive
+    a changing market. --COMPLETED REVISION THATS NEEDED: Scalability is also lowered on larger
+    networks, but has better influence spread. One way of scaling the greedy algorithm is to
+    improve the existing algorithm by lowering the calculations need into two parts, and this will result into
+    increased speeds when new data is added. Also, changing the algorithm to a heuristic approach, which are fast,
+     scalable.
+
+B5. Efficiency and Maintainability:
+    1. Making sure all documents are in appropriate folder
+    2. Making sure all code is commented correctly
+    3. Making sure all functions and classes naming conventions are understandable
+    4. Any unused code is removed
+    5. Space-Time-Complexity kept relatively low
+    --COMPLETED REVISION THATS NEEDED:
+    6. The above items not only helps with maintainability but helps with software efficiency because
+        it makes it easier to create unit test for the code written, and makes it easier for debugging issues, by referencing
+        instances of other functions created to where the issues/errors have occurred.
+
+B6. Data Structures:
+    List were used within this program because "Lists need not be homogeneous always
+    which makes it a most powerful tool in Python. Lists are mutable, and hence, they
+    can be altered even after their creation. List in Python are ordered and have a definite
+    count." Source: https://www.geeksforgeeks.org/python-list/. Using list of list, keeps a
+    constant time in inserting and deletion and can grow with out restructure. Weakness is memory
+    overhead can become higher, and list search is linear instead of logarithmic.
+
+C.  Original Code:
+    --COMPLETED REVISION THATS NEEDED: When code is ran the console will display to the user the total miles for the path
+    taken "Shortest path route was completed in 100.90 miles." which gives us the an acceptable range within 100 miles.
+    Proof all packages are delivered on time is shown to the user when EX: user types timestamp and uses 16:00:00
+    will show all 40 packages with delivered times, also screen shots are provided. 2 screenshots for the first 20 and
+    2 screen shots for the next 20, was not enough room to capture all info in one screen shot.
+
+D.  Data Structures: Located description of data structure in B6. Also, a relationship between the data structure and data
+    points, since a list is an abstract data type, which represents a countable number of ordered values, works well
+    with the given distances that are ordered for each destination.
+
+G1. Interface:
+    The interface shows the user that the solution was completed, title of project, number of miles , and a lookup function
+    where user can time lookup, timestamp, all, and exit. Also, provided a screen shot of interface when program is ran
+    call Interface.png.
+
+G1,2,3.  --COMPLETED REVISION THATS NEEDED: All status checks are done and shown with screen shots located in
+        directories, with 4 files with 1st and 2nd half views of each package and delivery status and time, within
+        directories names after each status time the needs to be shown.
+
+I1. Advantages:
+    Advantages of the using a greedy algorithm is:
+        1. Always takes the best available choice
+        2. Always keeps taking the best available choice is usually linear work
+
+I2. Meets all available requirement for the project, this can be shown by results shown in interface and giving the
+    user the optimal path for the deliveries
+
+I3. One choice I could have used was dynamic programming, to break up the problem into overlapping sub-
+    problems, this will be better because it is more efficient than the greedy algorithm. Another choice
+    is the Floyd–Warshall algorithm, it finds all possible paths through each pair of vertices in a graph.
+    Then it will give an estimate that is optimal, unlike greedy does not always give the most optimal path.
+
+J. Would have used a dictionary because would make it quicker by accessing key values, instead of accessing
+   through indexes. Also, implementing unit test would make it easier for me to test each of my functions quicker.
+   I would implement statements to show status for the deliveries in between certain times of the day, instead of having
+   to show all information. It would allow me to show for example if i wanted to just see all packages delivered at 830 to
+   930 the programs would display the given information.
+
+K1. List were used within this program because "Lists need not be homogeneous always
+    which makes it a most powerful tool in Python. Lists are mutable, and hence, they
+    can be altered even after their creation. List in Python are ordered and have a definite
+    count." Source: https://www.geeksforgeeks.org/python-list/. Using list of list, keeps a
+    constant time in inserting and deletion and can grow with out restructure making scaling more
+    effortless. Weakness in memory overhead can become higher, and list search is linear instead of logarithmic.
+    Also, overhead was kept minimal because using the list for the truck and packages help with validating accuracy.
+
+K2. Could have used a dictionary or a tuple sets to meet the same criteria of the project because
+    they can insert data, retrieve data, and delete data in indexes, which makes them closely related
+    to lists. The differences are:
+        1. Dictionary uses key values
+        2. Tuples are immutable
+        3. Tuples stored in a single block of memory
+        4. Dictionary are mapped to a value
+
+L.Sources:
+    “Floyd-Warshall Algorithm.” Brilliant Math & Science Wiki, https://brilliant.org/wiki/floyd-warshall-algorithm/.
+    “Greedy Algorithms.” GeeksforGeeks, www.geeksforgeeks.org/greedy-algorithms/.
